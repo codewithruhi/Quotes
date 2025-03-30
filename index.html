@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width">
+        <title>Document</title>
+    </head>
+
+    <style>
+        body{
+            background-color: rgb(25, 24, 24);
+                justify-content: center;
+                align-items: center;
+                color: rgb(221, 133, 162);
+                display: flex;
+        }
+
+        #cls{
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 50px;
+                align-items: ce;
+                padding: 80px;
+                width:60%;
+                height: 300px;
+                background-color: rgb(221, 133, 162);
+                border-radius: 20px;
+                box-shadow: 0px 0px 45px ;
+                color: white;
+                
+        }
+    </style>
+    <body>
+        <div id="cls">
+            <h1 style="font-size: 30px;color: black; margin-left: 32%;">GENERAL QUOTERIUM</h1>
+            <p id="Qts" style="margin-left: 25% ;"></p>
+            
+            <button onclick="LifeQuotation()" style="margin-left: 39%;height: 50px;width: 200px;border-radius: 12px; font-size: 25px;">Genarete</button>
+        </div>
+        <script>
+            function LifeQuotation()
+            {
+                const Quotes=["Learn daily, grow endlessly.", "Success starts with effort.","Mistakes are lesson","Never stop learning.","Focus,learn,succeed.","Knowledge is power.","Your potential is endless.","Focus on your goal"]
+
+                let Index=Math.floor(Math.random()*Quotes.length)
+                document.getElementById("Qts").innerHTML=Quotes[Index];
+            }
+
+
+          
+         </script>
+    </body>
+    </html>
